@@ -1,0 +1,73 @@
+
+
+h4 {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+    /* font-weight: bold; */
+}
+
+.pic {
+	height: 200px;
+	width: 100px;
+}
+
+
+.aw-btn {
+	--button-hover-pressure: 4;
+--transform-speed: 0.4s;
+
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	background: linear-gradient(-45deg, rgb(90, 82, 82), rgb(255, 255, 255), rgb(250, 250, 250), rgb(0, 0, 0));
+	background-size: 150% 120%;
+	-webkit-animation: Gradient 18s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+.btn {
+    border-radius: 10px;
+    
+
+}

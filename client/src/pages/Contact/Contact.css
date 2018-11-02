@@ -1,0 +1,19 @@
+#email {
+    color: red;
+}
+
+#input {
+    background: linear-gradient(-45deg, rgb(163, 4, 4), rgb(252, 252, 252), rgb(255, 255, 255), rgb(255, 255, 255));
+    color:rgb(0, 0, 0); 
+}
+
+.mern {
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+.submit-form {
+    width: 50%
+}
