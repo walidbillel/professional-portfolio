@@ -4,6 +4,7 @@ import './Contact.css'
 import { AwesomeButton } from 'react-awesome-button';
 import API from '../../utils/API';
 import Modal from '../../components/Modal';
+import Modal2 from '../../components/Modal2';
 
 // In your render...
 
@@ -14,10 +15,10 @@ class Contact extends Component {
 
     state = {
         show: false,
+        show2: false,
         user: '',
         email: '',
         message: '',
-        users: []
     };
 
     componentDidMount() {
@@ -33,6 +34,15 @@ class Contact extends Component {
         this.setState({ show: false });
     };
 
+    
+    showModal2 = () => {
+        this.setState({ show2: true });
+    };
+
+    hideModal2 = () => {
+        this.setState({ show2: false });
+    };
+
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -42,7 +52,7 @@ class Contact extends Component {
 
     handleForSubmit = event => {
         event.preventDefault();
-        this.showModal();
+        
         if (this.state.user && this.state.email && this.state.message) {
             API.saveUser({
                 name: this.state.user,
@@ -54,9 +64,11 @@ class Contact extends Component {
                     user: '',
                     email: '',
                     message: '',
-                    users: []
                 })
-            }).catch(err => { console.log(err) })
+            }).catch(err => { console.log(err) });
+            this.showModal();
+        } else {
+            this.showModal2();
         }
 
         console.log(this.state.user);
@@ -132,14 +144,24 @@ class Contact extends Component {
                             </form>
 
                             <Modal show={this.state.show} handleClose={this.hideModal}>
-                                <h4>Thank you for reaching out. I will contact you as soon as possible.
+                                <h4>Thank you for reaching out. You will hear from me soon <i class="fas fa-smile"></i>.</h4>
                             <br></br><br></br>
-                                    Best,
+                                   <h2>Best,
         
                             <br></br><br></br>
-                                    Walid
-                            </h4>
+                                    Walid</h2>
+                            
                             </Modal>
+
+                            <Modal2 show2={this.state.show2} handleClose2={this.hideModal2}>
+                            <h2>Error</h2>
+                            <br></br>
+                                <h4>Please Fill up all inputs then press SUBMIT again
+                           
+                            </h4>
+                            </Modal2>
+
+
                         </div>
                         <div className="col-md-1"></div>
                         <div className="col-md-5">

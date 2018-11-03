@@ -1,6 +1,5 @@
 
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
+import React from "react";
 import "./Modal.css";
 
 const Modal = ({ handleClose, show, children }) => {
