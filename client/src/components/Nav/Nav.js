@@ -5,7 +5,7 @@ import "./Nav.css";
 
 const STYLE = {
   navLink: {
-    color: 'black',
+    color: 'white',
     marginRight: "200px",
     fontSize: "30px",
     fontFamily: "'Amatic SC', cursive",

@@ -144,7 +144,7 @@ class Contact extends Component {
                             </form>
 
                             <Modal show={this.state.show} handleClose={this.hideModal}>
-                                <h4>Thank you for reaching out. You will hear from me soon <i class="fas fa-smile"></i>.</h4>
+                                <h4>Thank you for reaching out. You will hear from me soon <i className="fas fa-smile"></i>.</h4>
                             <br></br><br></br>
                                    <h2>Best,
         
