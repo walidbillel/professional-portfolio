@@ -17,13 +17,13 @@ const Photopage = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
-                        <a href="/home"><img className="main" src={Pic} alt="me"></img></a>
+                        <a href="/home"><img  className="main-img" src={Pic} alt="me"></img></a>
                     </div>
 
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <header className="mainname">Welcome!! I'm Walid Boubguira. </header>
+                        <header className="mainname">Welcome!!  I'm <span id="namey">WALID BILLEL BOUBGUIRA.</span> <br></br> Click Browse To Proceed. </header>
                     </div>
                 </div>
             </div>
