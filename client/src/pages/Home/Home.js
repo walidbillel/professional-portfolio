@@ -3,9 +3,7 @@ import Navbar from '../../components/Nav';
 import Aboutme from '../../components/Aboutme';
 import Skills from '../../components/Skills';
 
-
 class Home extends Component {
-    
     
     render() {
         return(

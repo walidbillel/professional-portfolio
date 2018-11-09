@@ -6,6 +6,9 @@ import Click from './click.svg'
 
 
 
+
+
+
 const Photopage = () => {
     return (
         <div className="mainbody">
@@ -20,7 +23,7 @@ const Photopage = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-12">
-                        <header className="mainname">Welcome!! I'am Walid Boubguira. </header>
+                        <header className="mainname">Welcome!! I'm Walid Boubguira. </header>
                     </div>
                 </div>
             </div>
