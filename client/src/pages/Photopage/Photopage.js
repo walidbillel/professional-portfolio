@@ -9,7 +9,7 @@ import Click from './click.svg'
 const Photopage = () => {
     return (
         <div className="mainbody">
-          
+
 
             <div className="container">
                 <div className="row">
@@ -19,9 +19,9 @@ const Photopage = () => {
 
                 </div>
                 <div className="row">
-                <div className="col-md-12">
-                <header className="mainname">Walid Boubguira</header>
-                </div>
+                    <div className="col-md-12">
+                        <header className="mainname">Welcome!! I'am Walid Boubguira. </header>
+                    </div>
                 </div>
             </div>
 
