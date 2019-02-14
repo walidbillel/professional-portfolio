@@ -10,7 +10,8 @@
     "build": "node scripts/build.js",
     "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "installDeps": "yarn && cd client && yarn"
+    "installDeps": "yarn && cd client && yarn",
+    "heroku-postbuild": "echo Skip build on Heroku"
   },
   "author": "",
   "license": "ISC",
@@ -25,5 +26,6 @@
     "helmet": "^3.14.0",
     "mongoose": "^5.0.11",
     "morgan": "^1.9.1"
-  }
+  },
+  "heroku-run-build-script": true
 }
